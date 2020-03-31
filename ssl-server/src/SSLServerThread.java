@@ -28,11 +28,10 @@ public class SSLServerThread extends Thread {
   private BufferedReader is;
   private BufferedWriter os;
 
-  ArrayList<String> addresses = new ArrayList<>(Arrays.asList("eerdogan17@ku.edu.tr",
-                                                              "etekalp16@ku.edu.tr",
-                                                              "okolukisa16@ku.edu.tr"));
+  private ArrayList<String> messages;
 
-  public SSLServerThread(SSLSocket s) {
+  public SSLServerThread(SSLSocket s, ArrayList<String> messages) {
+    this.messages = messages;
     sslSocket = s;
   }
 
@@ -50,9 +49,8 @@ public class SSLServerThread extends Thread {
       os.flush();
       System.out.println("Client " + sslSocket.getRemoteSocketAddress() + " sent : " + line);
 
-      // send emails
-      ArrayList<String> messages = generateMessages(addresses);
-      System.out.println(messages);
+      // get index of last received message from client
+      // send next message in list
 
     } catch (IOException e) {
       line = this.getClass().toString(); //reused String line for getting thread name
@@ -81,30 +79,6 @@ public class SSLServerThread extends Thread {
         System.out.println("Socket Close Error");
       }
     }//end finally
-  }
-
-  private ArrayList<String> generateMessages(ArrayList<String> list) {
-    ArrayList<String> result = new ArrayList<>();
-    int maxLength = 0;
-    for (String str : list) {
-      if (str.length() > maxLength) {
-        maxLength = str.length();
-      }
-    }
-
-    for (int i = 0; i < maxLength; i++) {
-      StringBuilder builder = new StringBuilder();
-      for (String str : list) {
-        if (str.length() > i) {
-          builder.append(str.charAt(i));
-        } else {
-          builder.append("$");
-        }
-      }
-      result.add(builder.toString());
-    }
-
-    return result;
   }
 
 }

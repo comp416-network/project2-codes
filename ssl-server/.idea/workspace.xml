@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c1cb59-5431-4dcc-a375-158f8a4002a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TCPServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/SSLConnectToServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/SSLConnectToServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-client/src/SSLConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/src/SSLConnectToServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-server/SSLServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-server/SSLServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-server/SSLServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-server/SSLServerThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SSLServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSLServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SSLServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSLServerThread.java" afterDir="false" />
@@ -57,6 +48,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -99,7 +91,7 @@
       <updated>1508922794322</updated>
       <workItem from="1508922820227" duration="3250000" />
       <workItem from="1508928233235" duration="1780000" />
-      <workItem from="1585586469329" duration="12127000" />
+      <workItem from="1585586469329" duration="12738000" />
     </task>
     <servers />
   </component>
@@ -119,26 +111,30 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="870" y="126" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585592178824" />
-    <state width="788" height="295" key="GridCell.Tab.0.bottom" timestamp="1585647963136">
+    <state width="788" height="295" key="GridCell.Tab.0.bottom" timestamp="1585648017332">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="788" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585647963136" />
+    <state width="788" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585648017332" />
     <state width="788" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585595762568" />
-    <state width="788" height="295" key="GridCell.Tab.0.center" timestamp="1585647963133">
+    <state width="788" height="295" key="GridCell.Tab.0.center" timestamp="1585648017330">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="788" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585647963133" />
+    <state width="788" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585648017330" />
     <state width="788" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585595762566" />
-    <state width="788" height="295" key="GridCell.Tab.0.left" timestamp="1585647963133">
+    <state width="788" height="295" key="GridCell.Tab.0.left" timestamp="1585648017329">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="788" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585647963133" />
+    <state width="788" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585648017329" />
     <state width="788" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585595762563" />
-    <state width="788" height="295" key="GridCell.Tab.0.right" timestamp="1585647963134">
+    <state width="788" height="295" key="GridCell.Tab.0.right" timestamp="1585648017331">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="788" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585647963134" />
+    <state width="788" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585648017331" />
     <state width="788" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585595762567" />
+    <state x="698" y="164" key="SettingsEditor" timestamp="1585648061580">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="698" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1585648061580" />
     <state x="914" y="259" width="700" height="530" key="recent.locations.popup" timestamp="1585593301596">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

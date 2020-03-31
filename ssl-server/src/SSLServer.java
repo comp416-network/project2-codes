@@ -3,6 +3,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.security.KeyStore;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -29,9 +30,12 @@ public class SSLServer extends Thread {
   //private ServerControlPanel serverControlPanel;
 
 
-  public SSLServer(int port) {
+  ArrayList<String> messages;
+
+  public SSLServer(int port, ArrayList<String> messages) {
 
     try {
+      this.messages = messages;
 
       //serverControlPanel = new ServerControlPanel("hello server!");
 
@@ -76,7 +80,7 @@ public class SSLServer extends Thread {
     try {
       s = (SSLSocket) sslSocket.accept();
       System.out.println("An SSL connection was established with a client on the address of " + s.getRemoteSocketAddress());
-      SSLServerThread st = new SSLServerThread(s);
+      SSLServerThread st = new SSLServerThread(s, messages);
       st.start();
 
     } catch (Exception e) {
