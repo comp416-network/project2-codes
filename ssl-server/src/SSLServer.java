@@ -1,6 +1,9 @@
 import javax.net.ssl.*;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.security.KeyStore;
+import java.util.Scanner;
 
 /**
  * Copyright [2017] [Yahya Hassanzadeh-Nazarabadi]
@@ -81,6 +84,5 @@ public class SSLServer extends Thread {
       System.out.println("Server Class.Connection establishment error inside listen and accept function");
     }
   }
-
 
 }

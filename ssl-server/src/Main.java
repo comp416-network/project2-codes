@@ -15,7 +15,20 @@
  */
 public class Main {
   public static void main(String args[]) {
-    SSLServer s = new SSLServer(4444);
+    int sslPort = (64004 + 59860 + 60346) % 65535;
+
+    Runnable tcpTask = () -> {
+      TCPServer tcpServer = new TCPServer(4242);
+    };
+
+    Runnable sslTask = () -> {
+      SSLServer s = new SSLServer(sslPort);
+    };
+
+    Thread tcpThread = new Thread(tcpTask);
+    Thread sslThread = new Thread(sslTask);
+//    tcpThread.start();
+    sslThread.start();
   }
 
 }

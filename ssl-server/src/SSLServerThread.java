@@ -1,5 +1,7 @@
 import javax.net.ssl.SSLSocket;
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Copyright [2017] [Yahya Hassanzadeh-Nazarabadi]
@@ -26,6 +28,10 @@ public class SSLServerThread extends Thread {
   private BufferedReader is;
   private BufferedWriter os;
 
+  ArrayList<String> addresses = new ArrayList<>(Arrays.asList("eerdogan17@ku.edu.tr",
+                                                              "etekalp16@ku.edu.tr",
+                                                              "okolukisa16@ku.edu.tr"));
+
   public SSLServerThread(SSLSocket s) {
     sslSocket = s;
   }
@@ -34,7 +40,6 @@ public class SSLServerThread extends Thread {
     try {
       is = new BufferedReader(new InputStreamReader(sslSocket.getInputStream()));
       os = new BufferedWriter(new OutputStreamWriter(sslSocket.getOutputStream()));
-
     } catch (IOException e) {
       System.out.println("Server Thread. Run. IO error in server thread");
     }
@@ -45,6 +50,9 @@ public class SSLServerThread extends Thread {
       os.flush();
       System.out.println("Client " + sslSocket.getRemoteSocketAddress() + " sent : " + line);
 
+      // send emails
+      ArrayList<String> messages = generateMessages(addresses);
+      System.out.println(messages);
 
     } catch (IOException e) {
       line = this.getClass().toString(); //reused String line for getting thread name
@@ -74,4 +82,29 @@ public class SSLServerThread extends Thread {
       }
     }//end finally
   }
+
+  private ArrayList<String> generateMessages(ArrayList<String> list) {
+    ArrayList<String> result = new ArrayList<>();
+    int maxLength = 0;
+    for (String str : list) {
+      if (str.length() > maxLength) {
+        maxLength = str.length();
+      }
+    }
+
+    for (int i = 0; i < maxLength; i++) {
+      StringBuilder builder = new StringBuilder();
+      for (String str : list) {
+        if (str.length() > i) {
+          builder.append(str.charAt(i));
+        } else {
+          builder.append("$");
+        }
+      }
+      result.add(builder.toString());
+    }
+
+    return result;
+  }
+
 }
