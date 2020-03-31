@@ -100,8 +100,6 @@ public class SSLConnectToServer {
 //    saveFile(s);
 //    s.close();
 
-    System.out.println("Received certificate.");
-
     System.setProperty("javax.net.ssl.trustStore", KEY_STORE_NAME);
 
     // Loads the keystore's password of client
@@ -136,6 +134,7 @@ public class SSLConnectToServer {
       is.close();
       os.close();
       sslSocket.close();
+      System.out.println("Connection closed.");
     } catch (IOException e) {
       e.printStackTrace();
     }

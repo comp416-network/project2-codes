@@ -26,11 +26,16 @@ public class Main {
 
   public static void main(String[] args) throws Exception {
     while (true) {
+      //for better formatting of output
+      System.out.println("");
+
+      // establish connection
       SSLConnectToServer sslConnectToServer = new SSLConnectToServer(TLS_SERVER_ADDRESS, TLS_SERVER_PORT);
       sslConnectToServer.Connect();
 
+      // send which segment of the emails the client needs next
       String receivedMessage = sslConnectToServer.SendForAnswer(Integer.toString(nextMessageToRequest));
-      System.out.println(receivedMessage);
+      System.out.println("Received #" + nextMessageToRequest + ": " + receivedMessage);
 
       if (receivedMessage.equals("$$$")) {
         sslConnectToServer.Disconnect();
