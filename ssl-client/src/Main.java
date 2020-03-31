@@ -18,24 +18,26 @@ public class Main {
   public final static String MESSAGE_TO_TLS_SERVER = "hello from client";
   public final static int TLS_SERVER_PORT = 53140;
 
+  public static int nextMessageToRequest = 0;
+
   public static void main(String[] args) throws Exception {
-        /*
-        Creates an SSLConnectToServer object on the specified server address and port
-         */
-    SSLConnectToServer sslConnectToServer = new SSLConnectToServer(TLS_SERVER_ADDRESS, TLS_SERVER_PORT);
-        /*
-        Connects to the server
-         */
-    sslConnectToServer.Connect();
+    while (true) {
+      SSLConnectToServer sslConnectToServer = new SSLConnectToServer(TLS_SERVER_ADDRESS, TLS_SERVER_PORT);
+      sslConnectToServer.Connect();
 
-        /*
-        Sends a message over SSL socket to the server and prints out the received message from the server
-         */
-    System.out.println(sslConnectToServer.SendForAnswer(MESSAGE_TO_TLS_SERVER));
+      String receivedMessage = sslConnectToServer.SendForAnswer(Integer.toString(nextMessageToRequest));
+      System.out.println(receivedMessage);
 
-        /*
-        Disconnects from the SSL server
-         */
-    sslConnectToServer.Disconnect();
+      if (receivedMessage.equals("$$$")) {
+        sslConnectToServer.Disconnect();
+        break;
+      } else {
+        nextMessageToRequest++;
+      }
+
+      sslConnectToServer.Disconnect();
+    }
+
+
   }
 }

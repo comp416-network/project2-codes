@@ -26,7 +26,7 @@ public class SSLServerThread extends Thread {
   private SSLSocket sslSocket;
   private String line = new String();
   private BufferedReader is;
-  private BufferedWriter os;
+  private PrintWriter os;
 
   private ArrayList<String> messages;
 
@@ -38,16 +38,18 @@ public class SSLServerThread extends Thread {
   public void run() {
     try {
       is = new BufferedReader(new InputStreamReader(sslSocket.getInputStream()));
-      os = new BufferedWriter(new OutputStreamWriter(sslSocket.getOutputStream()));
+      os = new PrintWriter(sslSocket.getOutputStream());
     } catch (IOException e) {
       System.out.println("Server Thread. Run. IO error in server thread");
     }
 
     try {
       line = is.readLine();
-      os.write(SERVER_REPLY);
+      System.out.println("Client sent: " + line);
+      int index = Integer.parseInt(line);
+      os.write(messages.get(index));
       os.flush();
-      System.out.println("Client " + sslSocket.getRemoteSocketAddress() + " sent : " + line);
+      System.out.println("Sent: " + messages.get(index));
 
       // get index of last received message from client
       // send next message in list

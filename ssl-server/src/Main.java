@@ -51,7 +51,7 @@ public class Main {
       }
     }
 
-    for (int i = 0; i < maxLength; i++) {
+    for (int i = 0; i <= maxLength; i++) {
       StringBuilder builder = new StringBuilder();
       for (String str : list) {
         if (str.length() > i) {
