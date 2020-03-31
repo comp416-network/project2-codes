@@ -1,3 +1,5 @@
+import com.sun.media.jfxmediaimpl.HostUtils;
+
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
@@ -32,6 +34,7 @@ public class SSLConnectToServer {
   Name of key store file
    */
   private final String KEY_STORE_NAME = "clientkeystore";
+  private final String username = "admin";
   /*
   Password to the key store file
    */
@@ -43,6 +46,9 @@ public class SSLConnectToServer {
 
   protected String serverAddress;
   protected int serverPort;
+
+  // for TCP connection before ssl
+  private Socket s;
 
 
   public void Create_Key_Store() throws Exception {
@@ -79,9 +85,23 @@ public class SSLConnectToServer {
 
     serverAddress = address;
     serverPort = port;
-        /*
-        Loads the keystore's address of client
-         */
+
+    // TODO: TEMPORARILY DISABLED
+    // connect to server to receive cert
+//    s = new Socket(serverAddress, 4242);
+//
+//    InputStream in = s.getInputStream();
+//    os = new PrintWriter(s.getOutputStream());
+//    is = new BufferedReader(new InputStreamReader(in));
+//    SendForAnswer(username);
+//    System.out.println("Successfully connected to " + serverAddress + " on port " + serverPort);
+//
+//    // receive cert from server
+//    saveFile(s);
+//    s.close();
+
+    System.out.println("Received certificate.");
+
     System.setProperty("javax.net.ssl.trustStore", KEY_STORE_NAME);
 
     // Loads the keystore's password of client
@@ -128,7 +148,7 @@ public class SSLConnectToServer {
    * @return response from server
    */
   public String SendForAnswer(String message) {
-    String response = new String();
+    String response = "";
     try {
       os.println(message);
       os.flush();
@@ -138,6 +158,26 @@ public class SSLConnectToServer {
       System.out.println("ConnectionToServer. SendForAnswer. Socket read Error");
     }
     return response;
+  }
+
+  private void saveFile(Socket clientSock) throws IOException {
+    DataInputStream dis = new DataInputStream(clientSock.getInputStream());
+    FileOutputStream fos = new FileOutputStream("server_crt.crt");
+    byte[] buffer = new byte[873];
+
+    int filesize = 873; // Send file size in separate msg
+    int read = 0;
+    int totalRead = 0;
+    int remaining = filesize;
+    while((read = dis.read(buffer, 0, Math.min(buffer.length, remaining))) > 0) {
+      totalRead += read;
+      remaining -= read;
+      System.out.println("read " + totalRead + " bytes.");
+      fos.write(buffer, 0, read);
+    }
+
+    fos.close();
+    dis.close();
   }
 
 

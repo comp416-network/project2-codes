@@ -16,7 +16,7 @@
 public class Main {
   public final static String TLS_SERVER_ADDRESS = "localhost";
   public final static String MESSAGE_TO_TLS_SERVER = "hello from client";
-  public final static int TLS_SERVER_PORT = 4444;
+  public final static int TLS_SERVER_PORT = 53140;
 
   public static void main(String[] args) throws Exception {
         /*
