@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c117345d-0f75-481f-9ca7-3c79c8c2a906" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientkeystore" beforeDir="false" afterPath="$PROJECT_DIR$/clientkeystore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-client/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-client/SSLConnectToServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-client/SSLConnectToServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/SSLServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/SSLServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/SSLServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/out/production/java-tls-server/SSLServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/src/SSLServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/src/SSLServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +29,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -80,7 +73,7 @@
       <workItem from="1508920121418" duration="5790000" />
       <workItem from="1508928098979" duration="130000" />
       <workItem from="1508930003963" duration="12000" />
-      <workItem from="1585586460712" duration="13173000" />
+      <workItem from="1585586460712" duration="14074000" />
     </task>
     <servers />
   </component>
@@ -96,21 +89,25 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="628" y="298" key="FileChooserDialogImpl/0.23.1680.1027@0.23.1680.1027" timestamp="1585586466916" />
-    <state width="796" height="420" key="GridCell.Tab.0.bottom" timestamp="1585650034805">
+    <state width="796" height="420" key="GridCell.Tab.0.bottom" timestamp="1585665966508">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="796" height="420" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585650034805" />
-    <state width="796" height="420" key="GridCell.Tab.0.center" timestamp="1585650034803">
+    <state width="796" height="420" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585665966508" />
+    <state width="796" height="420" key="GridCell.Tab.0.center" timestamp="1585665966506">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="796" height="420" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585650034803" />
-    <state width="796" height="420" key="GridCell.Tab.0.left" timestamp="1585650034802">
+    <state width="796" height="420" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585665966506" />
+    <state width="796" height="420" key="GridCell.Tab.0.left" timestamp="1585665966505">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="796" height="420" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585650034802" />
-    <state width="796" height="420" key="GridCell.Tab.0.right" timestamp="1585650034804">
+    <state width="796" height="420" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585665966505" />
+    <state width="796" height="420" key="GridCell.Tab.0.right" timestamp="1585665966507">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="796" height="420" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585650034804" />
+    <state width="796" height="420" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585665966507" />
+    <state x="0" y="164" key="SettingsEditor" timestamp="1585665232458">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1585665232457" />
   </component>
 </project>

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Copyright [2017] [Yahya Hassanzadeh-Nazarabadi]
  * <p>
@@ -20,6 +22,8 @@ public class Main {
 
   public static int nextMessageToRequest = 0;
 
+  public static ArrayList<String> messages = new ArrayList<>();
+
   public static void main(String[] args) throws Exception {
     while (true) {
       SSLConnectToServer sslConnectToServer = new SSLConnectToServer(TLS_SERVER_ADDRESS, TLS_SERVER_PORT);
@@ -32,12 +36,47 @@ public class Main {
         sslConnectToServer.Disconnect();
         break;
       } else {
+        messages.add(receivedMessage);
         nextMessageToRequest++;
       }
 
       sslConnectToServer.Disconnect();
     }
 
+    System.out.println(constructEmails());
 
   }
+
+  private static ArrayList<String> constructEmails() {
+    int count = messages.get(0).length();
+    ArrayList<String> result = new ArrayList<>();
+
+    for (int i = 0; i < count; i++) {
+      StringBuilder builder = new StringBuilder();
+      for (String message : messages) {
+        char c = message.charAt(i);
+        if (c != '$') {
+          builder.append(c);
+        }
+      }
+      result.add(builder.toString());
+    }
+
+    return result;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
