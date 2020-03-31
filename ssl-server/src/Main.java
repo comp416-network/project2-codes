@@ -38,7 +38,7 @@ public class Main {
 
     Thread tcpThread = new Thread(tcpTask);
     Thread sslThread = new Thread(sslTask);
-//    tcpThread.start();
+    tcpThread.start();
     sslThread.start();
   }
 

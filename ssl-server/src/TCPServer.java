@@ -1,6 +1,7 @@
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TCPServer {
@@ -72,19 +73,22 @@ public class TCPServer {
   }
 
   public void sendFile(String file) throws IOException {
+    int count;
+    File myFile = new File(file);
+    System.out.println(myFile.length());
     DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-    FileInputStream fis = new FileInputStream(file);
+    FileInputStream fis = new FileInputStream(myFile);
     byte[] buffer = new byte[873];
 
-    int read;
-    while ((read=fis.read(buffer)) > 0) {
-      dos.write(buffer,0,read);
+    while ((count = fis.read(buffer)) > 0) {
+      System.out.println("oi");
+      dos.write(buffer, 0, 873);
       dos.flush();
+      System.out.println(Arrays.toString(buffer));
     }
 
     fis.close();
     dos.close();
-    System.out.println("Sent certificate.");
   }
 
 }
