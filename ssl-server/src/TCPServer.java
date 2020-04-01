@@ -75,15 +75,12 @@ public class TCPServer {
   public void sendFile(String file) throws IOException {
     int count;
     File myFile = new File(file);
-    System.out.println(myFile.length());
     DataOutputStream dos = new DataOutputStream(s.getOutputStream());
     FileInputStream fis = new FileInputStream(myFile);
     byte[] buffer = new byte[873];
 
     while ((count = fis.read(buffer)) > 0) {
-      System.out.println("oi");
       dos.write(buffer, 0, 873);
-      dos.flush();
       System.out.println(Arrays.toString(buffer));
     }
 
