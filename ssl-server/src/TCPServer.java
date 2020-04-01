@@ -77,10 +77,10 @@ public class TCPServer {
     File myFile = new File(file);
     DataOutputStream dos = new DataOutputStream(s.getOutputStream());
     FileInputStream fis = new FileInputStream(myFile);
-    byte[] buffer = new byte[873];
+    byte[] buffer = new byte[(int) myFile.length()];
 
     while ((count = fis.read(buffer)) > 0) {
-      dos.write(buffer, 0, 873);
+      dos.write(buffer, 0, count);
       System.out.println(Arrays.toString(buffer));
     }
 
