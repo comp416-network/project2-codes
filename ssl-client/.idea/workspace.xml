@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c117345d-0f75-481f-9ca7-3c79c8c2a906" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../answers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clientkeystore" beforeDir="false" afterPath="$PROJECT_DIR$/clientkeystore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-client/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-client/SSLConnectToServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-client/SSLConnectToServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_crt.crt" beforeDir="false" afterPath="$PROJECT_DIR$/server_crt.crt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SSLConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SSLConnectToServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ssl-server/src/TCPServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-server/src/TCPServerThread.java" afterDir="false" />
-    </list>
+    <list default="true" id="c117345d-0f75-481f-9ca7-3c79c8c2a906" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +70,7 @@
       <workItem from="1508928098979" duration="130000" />
       <workItem from="1508930003963" duration="12000" />
       <workItem from="1585586460712" duration="14361000" />
-      <workItem from="1585898821631" duration="940000" />
+      <workItem from="1585898821631" duration="1215000" />
     </task>
     <servers />
   </component>
