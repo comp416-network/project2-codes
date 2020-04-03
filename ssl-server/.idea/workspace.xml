@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4c1cb59-5431-4dcc-a375-158f8a4002a5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/TCPServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../answers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/clientkeystore" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/clientkeystore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/SSLConnectToServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/out/production/java-tls-client/SSLConnectToServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/server_crt.crt" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/server_crt.crt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ssl-client/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ssl-client/src/SSLConnectToServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ssl-client/src/SSLConnectToServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java-tls-server/TCPServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java-tls-server/TCPServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TCPServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TCPServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +97,7 @@
       <workItem from="1508922820227" duration="3250000" />
       <workItem from="1508928233235" duration="1780000" />
       <workItem from="1585586469329" duration="19983000" />
+      <workItem from="1585898821369" duration="960000" />
     </task>
     <servers />
   </component>
@@ -115,26 +117,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="870" y="126" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1585758296536" />
-    <state width="792" height="295" key="GridCell.Tab.0.bottom" timestamp="1585839000215">
+    <state width="788" height="295" key="GridCell.Tab.0.bottom" timestamp="1585899884007">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="792" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585838926829" />
-    <state width="792" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585839000215" />
-    <state width="792" height="295" key="GridCell.Tab.0.center" timestamp="1585839000213">
+    <state width="788" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1585899874850" />
+    <state width="788" height="295" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1585899884007" />
+    <state width="788" height="295" key="GridCell.Tab.0.center" timestamp="1585899884006">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="792" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585838926827" />
-    <state width="792" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585839000213" />
-    <state width="792" height="295" key="GridCell.Tab.0.left" timestamp="1585839000210">
+    <state width="788" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1585899874848" />
+    <state width="788" height="295" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1585899884006" />
+    <state width="788" height="295" key="GridCell.Tab.0.left" timestamp="1585899884005">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="792" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585838926826" />
-    <state width="792" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585839000210" />
-    <state width="792" height="295" key="GridCell.Tab.0.right" timestamp="1585839000214">
+    <state width="788" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1585899874848" />
+    <state width="788" height="295" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1585899884005" />
+    <state width="788" height="295" key="GridCell.Tab.0.right" timestamp="1585899884006">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="792" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585838926828" />
-    <state width="792" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585839000214" />
+    <state width="788" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1585899874849" />
+    <state width="788" height="295" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1585899884006" />
     <state width="788" height="295" key="GridCell.Tab.1.bottom" timestamp="1585759494448">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

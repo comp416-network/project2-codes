@@ -27,7 +27,7 @@ public class TCPServerThread extends Thread {
 
         // send certificate
         sendFile("server_crt.crt");
-        s.close();
+//        s.close();
 
       } else {
         // close conn
@@ -64,8 +64,7 @@ public class TCPServerThread extends Thread {
     byte[] buffer = new byte[873];
 
     while ((count = fis.read(buffer)) > 0) {
-      dos.write(buffer);
-      System.out.println(Arrays.toString(buffer));
+      dos.write(buffer, 0, 873);
     }
 
     dos.close();

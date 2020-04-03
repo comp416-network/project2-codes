@@ -1,5 +1,0 @@
-1.
-
-17. Right clicking on a captured frame and selecting the 'Follow TCP stream' option shows the underlying HTTP message. It shows the entire text, though I can see which part was sent with which packet.
-
-18.

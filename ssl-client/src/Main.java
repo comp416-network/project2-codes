@@ -27,7 +27,7 @@ public class Main {
   public static void main(String[] args) throws Exception {
     while (true) {
       //for better formatting of output
-      System.out.println("");
+      System.out.println();
 
       // establish connection
       SSLConnectToServer sslConnectToServer = new SSLConnectToServer(TLS_SERVER_ADDRESS, TLS_SERVER_PORT);
